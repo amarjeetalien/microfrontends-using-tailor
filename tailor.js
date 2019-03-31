@@ -14,7 +14,10 @@ http
     }
 
     req.headers['x-request-uri'] = req.url
-    req.url = '/index'
+
+    if(req.url === '/') {
+      req.url = '/index'
+    }
 
     tailor.requestHandler(req, res)
   })
