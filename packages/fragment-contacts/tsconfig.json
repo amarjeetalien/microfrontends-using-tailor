@@ -2,7 +2,9 @@
     "compilerOptions": {
       "outDir": "./public/",
       "noImplicitAny": true,
-      "module": "es6",
+      "baseUrl": "app",
+      "module": "amd",
+      "moduleResolution": "Node",
       "target": "es5",
       "jsx": "react",
       "allowJs": true

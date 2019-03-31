@@ -1,6 +1,6 @@
 import * as React from "react";
-import Logo from "../Logo/index";
-import NavItem from "../NavItem/index";
+import Logo from "../Logo";
+import NavItem from "../NavItem";
 
 import "./styles.scss";
 import { withRouter, RouterProps } from "react-router";

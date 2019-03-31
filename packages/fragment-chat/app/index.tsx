@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { render } from 'react-dom';
 
-import Chat from './Chat/index';
+import Chat from './Chat';
 
 render(<Chat/>, document.getElementById('chat'));

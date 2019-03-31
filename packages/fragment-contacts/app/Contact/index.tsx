@@ -1,7 +1,20 @@
 import * as React from 'react';
+import './styles.scss';
 
-import './styles.scss'
-import { ContactType } from '../PropTypes/Contact/index';
+type ContactType = {
+  id: String,
+  email: String,
+  name: {
+      title: String,
+      first: String,
+      last: String
+  },
+  picture: {
+      large: any,
+      medium: any,
+      small: any
+  }
+}
 
 type ComponentProps = {
   contact: ContactType

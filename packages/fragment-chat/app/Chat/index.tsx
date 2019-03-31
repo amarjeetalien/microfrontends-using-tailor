@@ -1,7 +1,7 @@
 import * as React from "react";
 import classNames from "classnames";
 
-import Toggle from "../Toggle/index";
+import Toggle from "../Toggle";
 
 import "./styles.scss";
 
