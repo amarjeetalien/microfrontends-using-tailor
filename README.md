@@ -16,3 +16,7 @@ Refactored to use Webpack 4, Typescript and React Hooks (instead of proppy and p
 - `npm start` - Starts the tailor.js application that will load the fragments.
 
 Navigate to http://localhost:8080
+
+# Updates: 
+## 31.03.2019 
+- Added navigation using the react-router in the header fragment
