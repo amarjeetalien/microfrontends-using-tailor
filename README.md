@@ -1,4 +1,4 @@
-# Micro Frontend Demo application using Tailor.js
+# Micro frontends demo application using Tailor.js
 
 Forked from https://github.com/tsnolan23/tailor-react-spa.
 
