@@ -1,10 +1,9 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import classNames from 'classnames'
+import * as React from 'react';
+import classNames from 'classnames';
 
-import Toggle from '../Toggle'
+import  Toggle  from '../Toggle/index';
 
-import './styles.scss'
+import './styles.scss';
 
 const Chat = () => (
   <Toggle>
