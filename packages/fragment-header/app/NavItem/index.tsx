@@ -7,16 +7,17 @@ import { Redirect } from "react-router";
 type ComponentProps = {
   active: boolean;
   index: number;
+  text: string;
   onClick: (index: number) => void;
 };
-const NavItem = ({ index, active, onClick }: ComponentProps) => (
+const NavItem = ({ index, active, text, onClick }: ComponentProps) => (
   <div
     onClick={() => { onClick(index); } } 
     className={classnames({
       "nav-item": true,
       current: active
     })}
-  ></div>
+  >{text}</div>
 );
 
 export default NavItem;

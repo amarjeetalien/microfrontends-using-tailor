@@ -9,10 +9,11 @@ const Header = (routerProps : RouterProps) => {
    
   return <div className="header">
     <Logo />
-    {["contacts", "error"].map((item, index) => (
+    {["contacts", "empty"].map((item, index) => (
       <NavItem
         key={index}
         index={index}
+        text={item}
         active={routerProps.history.location.pathname.indexOf(item) > 0 }
         onClick={() => { routerProps.history.push(`/${item}`)}}
       />
