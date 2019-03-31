@@ -9,7 +9,7 @@ const Header = (routerProps : RouterProps) => {
    
   return <div className="header">
     <Logo />
-    {["home", "error"].map((item, index) => (
+    {["contacts", "error"].map((item, index) => (
       <NavItem
         key={index}
         index={index}
