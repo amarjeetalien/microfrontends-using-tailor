@@ -2,7 +2,6 @@ import { Component } from "react";
 
 type ComponentState = {
   on: boolean;
-  toggle?: () => void;
 };
 
 type ComponentProps = {
@@ -23,7 +22,7 @@ class Toggle extends Component<ComponentProps, ComponentState> {
   render() {
     return this.props.children({
       on: this.state.on,
-      toggle: this.state.toggle
+      toggle: this.toggle
     });
   }
 }

@@ -1,19 +1,16 @@
-import * as React from 'react';
-import classNames from 'classnames';
+import * as React from "react";
+import classNames from "classnames";
 
-import  Toggle  from '../Toggle/index';
+import Toggle from "../Toggle/index";
 
-import './styles.scss';
+import "./styles.scss";
 
 const Chat = () => (
   <Toggle>
     {({ on, toggle }) => (
-      <div
-        className={classNames('chat', { expanded: on })}
-        onClick={toggle}
-      />
+      <div className={classNames("chat", { expanded: on })} onClick={toggle} />
     )}
   </Toggle>
-)
+);
 
-export default Chat
+export default Chat;

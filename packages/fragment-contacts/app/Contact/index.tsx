@@ -1,13 +1,14 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-
-import ContactPropType from '../PropTypes/Contact'
+import * as React from 'react';
 
 import './styles.scss'
+import { ContactType } from '../PropTypes/Contact/index';
 
+type ComponentProps = {
+  contact: ContactType
+}
 const Contact = ({
   contact
-}) => (
+}: ComponentProps) => (
   <div className="contact">
     <div className="contact-details">
       <img className="contact-avatar" src={contact.picture.medium}/>
@@ -19,9 +20,5 @@ const Contact = ({
     </div>
   </div>
 )
-
-Contact.propTypes = {
-  contact: ContactPropType.isRequired
-}
 
 export default Contact
