@@ -16,7 +16,7 @@ http
     req.headers['x-request-uri'] = req.url
 
     if(req.url === '/') {
-      req.url = '/index'
+      req.url = '/home'
     }
 
     tailor.requestHandler(req, res)

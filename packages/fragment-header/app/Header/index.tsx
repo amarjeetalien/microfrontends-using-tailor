@@ -3,21 +3,21 @@ import Logo from "../Logo/index";
 import NavItem from "../NavItem/index";
 
 import "./styles.scss";
+import { withRouter, RouterProps } from "react-router";
 
-const Header = () => { 
-  const [active, setActive] = React.useState( 0 );
-  
+const Header = (routerProps : RouterProps) => { 
+   
   return <div className="header">
     <Logo />
-    {[1,2,3,4,5].map((item, index) => (
+    {["home", "error"].map((item, index) => (
       <NavItem
         key={index}
         index={index}
-        active={index === active}
-        onClick={setActive}
+        active={routerProps.history.location.pathname.indexOf(item) > 0 }
+        onClick={() => { routerProps.history.push(`/${item}`)}}
       />
     ))}
   </div>
 }
 
-export default Header;
+export default withRouter(Header);

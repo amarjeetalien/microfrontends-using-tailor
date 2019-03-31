@@ -1,6 +1,9 @@
-import * as React from 'react'
-import { render } from 'react-dom'
+import * as React from 'react';
+import { render } from 'react-dom';
+import Header from './Header/index';
+import {  Router } from 'react-router-dom';
+import { createBrowserHistory } from 'history';
 
-import Header from './Header'
+const history = createBrowserHistory({ forceRefresh: true });
 
-render(<Header/>, document.getElementById('header'))
+render(<Router history={history}><Header/></Router>, document.getElementById('header'))
