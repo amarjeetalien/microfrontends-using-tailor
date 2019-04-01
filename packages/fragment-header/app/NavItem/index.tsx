@@ -6,13 +6,12 @@ import { Redirect } from "react-router";
 
 type ComponentProps = {
   active: boolean;
-  index: number;
   text: string;
-  onClick: (index: number) => void;
+  onClick: () => void;
 };
-const NavItem = ({ index, active, text, onClick }: ComponentProps) => (
+const NavItem = ({  active, text, onClick }: ComponentProps) => (
   <div
-    onClick={() => { onClick(index); } } 
+    onClick={onClick}
     className={classnames({
       "nav-item": true,
       current: active
