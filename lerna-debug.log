@@ -5,50 +5,62 @@
 1 silly flags   parallel: true,
 1 silly flags   script: 'start',
 1 silly flags   args: [] }
-2 verbose rootPath /Users/teddy/Development/microfrontends-using-tailorjs
+2 verbose rootPath /home/teddy/Development/tailor-react-typescript-spa
 3 info version 2.11.0
-4 silly existsSync /Users/teddy/Development/microfrontends-using-tailorjs/VERSION
+4 silly existsSync /home/teddy/Development/tailor-react-typescript-spa/VERSION
 5 silly initialize attempt
 6 silly initialize success
 7 silly execute attempt
 8 info run in 4 package(s): npm run start
 9 silly runScriptInPackageStreaming [ 'start', [], 'fragment-chat' ]
 10 silly getExecOpts { cwd:
-10 silly getExecOpts    '/Users/teddy/Development/microfrontends-using-tailorjs/packages/fragment-chat' }
+10 silly getExecOpts    '/home/teddy/Development/tailor-react-typescript-spa/packages/fragment-chat' }
 11 silly runScriptInPackageStreaming [ 'start', [], 'fragment-common' ]
 12 silly getExecOpts { cwd:
-12 silly getExecOpts    '/Users/teddy/Development/microfrontends-using-tailorjs/packages/fragment-common' }
+12 silly getExecOpts    '/home/teddy/Development/tailor-react-typescript-spa/packages/fragment-common' }
 13 silly runScriptInPackageStreaming [ 'start', [], 'fragment-contacts' ]
 14 silly getExecOpts { cwd:
-14 silly getExecOpts    '/Users/teddy/Development/microfrontends-using-tailorjs/packages/fragment-contacts' }
+14 silly getExecOpts    '/home/teddy/Development/tailor-react-typescript-spa/packages/fragment-contacts' }
 15 silly runScriptInPackageStreaming [ 'start', [], 'fragment-header' ]
 16 silly getExecOpts { cwd:
-16 silly getExecOpts    '/Users/teddy/Development/microfrontends-using-tailorjs/packages/fragment-header' }
+16 silly getExecOpts    '/home/teddy/Development/tailor-react-typescript-spa/packages/fragment-header' }
 17 error execute callback with error
 18 error Error: Command failed: npm run start
-18 error events.js:167
+18 error events.js:170
 18 error       throw er; // Unhandled 'error' event
 18 error       ^
 18 error
-18 error Error: ENOENT: no such file or directory, open './public/bundle.js'
+18 error Error: listen EADDRINUSE: address already in use :::3000
+18 error     at Server.setupListenHandle [as _listen2] (net.js:1258:14)
+18 error     at listenInCluster (net.js:1306:12)
+18 error     at Server.listen (net.js:1394:7)
+18 error     at Object.<anonymous> (/home/teddy/Development/tailor-react-typescript-spa/packages/fragment-chat/fragment.js:21:8)
+18 error     at Module._compile (internal/modules/cjs/loader.js:805:30)
+18 error     at Object.Module._extensions..js (internal/modules/cjs/loader.js:816:10)
+18 error     at Module.load (internal/modules/cjs/loader.js:672:32)
+18 error     at tryModuleLoad (internal/modules/cjs/loader.js:612:12)
+18 error     at Function.Module._load (internal/modules/cjs/loader.js:604:3)
+18 error     at Function.Module.runMain (internal/modules/cjs/loader.js:868:12)
 18 error Emitted 'error' event at:
-18 error     at lazyFs.open (internal/fs/streams.js:115:12)
-18 error     at FSReqWrap.oncomplete (fs.js:141:20)
+18 error     at emitErrorNT (net.js:1285:8)
+18 error     at processTicksAndRejections (internal/process/task_queues.js:81:17)
+18 error     at process.runNextTicks [as _tickCallback] (internal/process/task_queues.js:56:3)
+18 error     at Function.Module.runMain (internal/modules/cjs/loader.js:871:11)
+18 error     at internal/main/run_main_module.js:21:11
 18 error npm ERR! code ELIFECYCLE
 18 error npm ERR! errno 1
-18 error npm ERR! fragment-header@1.0.0 start: `node fragment.js`
+18 error npm ERR! fragment-chat@1.0.0 start: `node fragment.js`
 18 error npm ERR! Exit status 1
 18 error npm ERR!
-18 error npm ERR! Failed at the fragment-header@1.0.0 start script.
+18 error npm ERR! Failed at the fragment-chat@1.0.0 start script.
 18 error npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
 18 error
 18 error npm ERR! A complete log of this run can be found in:
-18 error npm ERR!     /Users/teddy/.npm/_logs/2019-03-31T14_18_50_514Z-debug.log
+18 error npm ERR!     /home/teddy/.npm/_logs/2019-04-01T17_24_16_952Z-debug.log
 18 error
 18 error
-18 error > fragment-header@1.0.0 start /Users/teddy/Development/microfrontends-using-tailorjs/packages/fragment-header
+18 error > fragment-chat@1.0.0 start /home/teddy/Development/tailor-react-typescript-spa/packages/fragment-chat
 18 error > node fragment.js
 18 error
-18 error SPA Fragment Server started at 8081
 18 error
-18 error     at Promise.all.then.arr (/Users/teddy/Development/microfrontends-using-tailorjs/node_modules/execa/index.js:236:11)
+18 error     at Promise.all.then.arr (/home/teddy/Development/tailor-react-typescript-spa/node_modules/execa/index.js:236:11)
