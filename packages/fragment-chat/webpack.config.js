@@ -2,6 +2,7 @@ const path = require('path');
 
 module.exports = {
   entry: './app/index.tsx',
+  devtool: 'inline-source-map',
   module: {
     rules: [{
         test: /\.tsx?$/,

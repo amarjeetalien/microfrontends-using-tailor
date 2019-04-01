@@ -2,6 +2,7 @@
     "compilerOptions": {
       "outDir": "./public/",
       "baseUrl": "app",
+      "sourceMap": true,
       "noImplicitAny": true,
       "module": "amd",
       "moduleResolution": "Node",
